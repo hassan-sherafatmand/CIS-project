@@ -116,6 +116,8 @@ input, select {
 
 header {
     background : var(--Main-Header-Background);
+    padding: 32px 0;
+    border-bottom: solid 1px #D3D3D3;
 }
 
 header :after {
@@ -127,25 +129,26 @@ header :after {
 
 /* Logo Section */
 /************************************************/
-header h1{
+#main-header {
+   
+}
+
+#main-header h1{
     height: 0;
     text-indent: -100000px;
 }
 
 #logo{
     float: left;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-left: 64px;
+    margin-left: 4.50em;
 }
 
 #logo a {
     display: block;
     background: url(imges/Darklogo.svg) no-repeat;
-    width: 16px;
-    height: 32px;
+    width: 32px;
+    height: 40px;
     text-indent: -10000px;
-    
 }
 
 #logo a:hover{
@@ -157,16 +160,15 @@ header h1{
 
 #burger{
     float: right;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-right: 64px;
+    margin-top: 8px;
+    margin-right: 4.50em;
 }
 
 #burger a {
     display: block;
     background: url(imges/Menu.svg)no-repeat;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     text-indent: -10000px;
     
 }
@@ -182,21 +184,28 @@ header h1{
 /****************************************/
 
 header nav {
-    margin-top: 32px;
     float: left;
 }
-header nav h3 {
+#main-header nav {
+    margin-top: 12px;
+    width: 100%;
+}
+#main-header nav:after{
+    display: block;
+    content:"";
+    clear: both;
+}
+#main-header nav h3 {
     height: 0;
     text-indent: -1000px;
 }
 
-header nav li{
+#main-header nav li{
     float: left;
     margin-right: 64px;
-    
 }
  
-header nav a{
+#main-header nav a{
     color: var(--Header-Menu);
     text-decoration: none;
     font-family: sans-serif;
@@ -220,7 +229,7 @@ header nav a:hover{
 #main-banner {
     position: relative;
     background-color: var(--Main-Banner-Background);
-    //border: solid 5px red;   
+     
 }
 #main-banner {
   display: block;
@@ -230,15 +239,14 @@ header nav a:hover{
 
 #position-banner{
     position: relative;
-    padding-top: 96px;
-
+    padding: 96px 0;
 }
 /*--Social Media Secction--*/
 /*****************************************/
 #social {
     float: left;
     position: absolute;
-    left: 128px;
+    left: 7.50em;
     top: 256px;
 }
 #social h3{
@@ -249,7 +257,7 @@ header nav a:hover{
     margin-bottom: 48px;
 }
 
-#social nav li a{
+#social nav li a.facebook, a.twitter, a.linked-in{
     display: block;
     width: 24px;
     height: 24px;
@@ -257,7 +265,6 @@ header nav a:hover{
 }
 #social nav a.facebook {
     background:  url(imges/2Facebook.svg) no-repeat; 
-    
 }
 #social nav a.facebook:hover{
      background: url(imges/Facebook.svg) no-repeat; 
@@ -293,9 +300,27 @@ header nav a:hover{
     
 }
 #position-banner p{
-    color: 
+    color:#606060;
+    font-family: Arial;
+    line-height: 24px;
+    margin-bottom: 32px;
 }
-
+.main-bottom{
+    display: block;
+    width: 300px;
+    background: #34457C;
+    font-size: 32px;
+    color: #eee;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.main-bottom:hover{
+    color:#343434;
+    background-color:#4CA9DF;
+}
 
 
 
