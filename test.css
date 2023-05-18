@@ -1,0 +1,36 @@
+.grid{
+   position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(5,minmax(150px,auto));
+    gap: 10px;
+    background: #EEEEEE;
+    padding: 20px;
+}
+div{
+    border: 1px solid red;
+    padding :20px;
+    text-align: center;
+}
+.one{
+    grid-column: 1/13;
+}
+.two{
+    grid-column: 1/13;
+}
+.three{
+    grid-column: 1/8;
+}
+.four{
+    grid-column: 8/13;
+    position: absolute;
+   
+    left: 100px;
+    display: block;
+}
+.five{
+    grid-column: 1/13;
+   
+}
