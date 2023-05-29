@@ -3,51 +3,60 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>York</title>
+    <title>York Law Office</title>
+
 </head>
 
 <body>
-    <div class="grid-container">
+    <div id="grid-container">
         <header>
-            <div id="header-logo">
-                <h2>York Office Law</h2>
-                <a class="logo" href="index.html"></a>
+            <div class="logo">
+                <a href="index.html">York Law Office</a>
+                <h3>York Law Office</h3>
+                <div id="Mobile_menu"></div>
             </div>
             <nav>
-                <h2>Main Navigation</h2>
-                <ul>
+                <h3>Main Navigation</h3>
+                <ul class="open">
                     <li><a class="current" href="#">Home</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Leagalpractice</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-
         </header>
         <div id="main-banner">
-            <section id="lead-banner">
-                <h3>Lorem Ipsum is simply dummy text</h3>
-                <h1>Lorem Ipsum Is Simply Dummy Text</h1>
-                <p>It is a long established fact that a reader will be distracted
-                    by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less
-                    normal.</p>
-                <a class="button" href="#">Learn more</a>
-            </section>
-            <aside>
-                <h3>Social navigation</h3>
-                <nav>
-                    <ul>
-                        <li><a class="facebook" href="#"></a></li>
-                        <li><a class="linked-in" href="#"></a></li>
-                        <li><a class="twitter" href="#"></a></li>
-                    </ul>
-                </nav>
+            <div id="banner-background">
+                <img src="assets/images/small-banner.jpg" alt="York Building" srcset="assets/images/large-banner.jpg 1200w,
+                            assets/images/mid-banner.jpg 768w,
+                            assets/images/small-banner.jpg 480w"
+                    sizes="(min-width 960px) 1200px, (min-width 700px) 768px, 200vw">
+            </div>
+            <div id="banner-content">
+                <section id="lead-banner">
+                    <h3>Lorem Ipsum is simply dummy text</h3>
+                    <h1>Lorem Ipsum Is Simply Dummy Text</h1>
+                    <p>It is a long established fact that a reader will be distracted
+                        by the readable content of a page when looking at its layout.
+                    </p>
+                    <a class="button" href="#">Learn more</a>
+                </section>
+                <section id="social">
+                    <h4>Social navigation</h4>
+                    <nav>
+                        <ul class="social-nav">
+                            <li><a class="facebook" href="#">Facebook</a></li>
+                            <li><a class="linked-in" href="#">Linked-in</a></li>
+                            <li><a class="twitter" href="#">Twitter</a></li>
+                        </ul>
+                    </nav>
 
-            </aside>
+                </section>
+            </div>
+
         </div>
         <main>
             <section id="practice-areas">
@@ -57,34 +66,41 @@
                     praesentium ex minima suscipit molestias voluptatum, amet a impedit
                     veniam quaerat asperiores consequatur nobis eum, eligendi magni
                     perferendis error provident. Excepturi, temporibus.</p>
+
                 <ul>
                     <li>
-                        <img src="assets/social/White-familysvg.svg" alt="Fmaily Icon">
-                        <h5>Family</h5>
+                        <img src="assets/images/family-small.jpg" alt="Fmaily Icon">
+                        <h4>Family</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
                             animi? Tempore aliquid omnis commodi,</p>
+                        <a class="read-more" href="#">Read more</a>
                     </li>
                     <li>
-                        <img src="assets/social/Blue-family.svg" alt="Fmaily Icon">
-                        <h5>Real State</h5>
+                        <img src="assets/images/real-state-small.jpg" alt="Real State">
+                        <h4>Real State</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
                             animi? Tempore aliquid omnis commodi,</p>
+                        <a class="read-more" href="#">Read more</a>
                     </li>
                     <li>
-                        <img src="assets/social/Blue-family.svg" alt="Fmaily Icon">
-                        <h5>Bussines &amp; Corporation</h5>
+                        <img src="assets/images/business-small.jpg" alt="Business and Corporation">
+                        <h4>Bussines &amp; Corporation</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
                             animi? Tempore aliquid omnis commodi,</p>
+                        <a class="read-more" href="#">Read more</a>
                     </li>
                     <li>
-                        <img src="assets/social/Blue-family.svg" alt="Fmaily Icon">
-                        <h5>Life Insurance</h5>
+                        <img src="assets/images/life-insurance-small.jpg" alt="Life insurance">
+                        <h4>Life Insurance</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
                             animi? Tempore aliquid omnis commodi,</p>
+                        <a class="read-more" href="#">Read more</a>
+
                     </li>
                 </ul>
             </section>
-            <section id="article">
+
+            <section id="articles">
                 <h2>Articles of the month</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
                     animi? Tempore aliquid omnis commodi, neque nostrum blanditiis quo
@@ -94,12 +110,18 @@
                 </p>
 
                 <ul>
-                    <li>
-                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                        <a href="#">Read more </a>
-
+                    <li class="title">
+                        <ul>
+                            <li>
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                            </li>
+                            <li> <a href="#">Read more </a></li>
+                        </ul>
                     </li>
-                    <li>
+                    <li class="articleImage" >
+                        <img src="assets/images/article.jpg">
+                    </li>
+                    <li class="description">
                         <p><span class="first-letter">L</span>orem ipsum dolor sit amet consectetur adipisicing elit.
                             Excepturi,
                             animi? Tempore aliquid omnis commodi, neque nostrum blanditiis quo
@@ -107,27 +129,48 @@
                             veniam quaerat asperiores consequatur nobis eum, eligendi magni
                             perferendis error provident. Excepturi, temporibus.
                         </p>
-                        <img src="assets/images/articl.png" class="icon" alt="Article Icon">
-                        <h6>Lorem ipsum</h6>
-                        <span>05/04/2022</span>
+                        <ul>
+                            <li><img src="assets/images/articl.png" class="icon" alt="Article Icon"></li>
+                            <li>
+                                <h5>Lorem ipsum</h5>
+                            </li>
+                            <li>
+                                <p>05/04/2022</p>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                        <a href="#">Read more</a>
+                    <li class="title">
+                        <ul>
+                            <li>
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                            </li>
+                            <li> <a href="#">Read more </a></li>
+                        </ul>
                     </li>
-                    <li>
+                    <li class="articleImage" >
+                        <img src="assets/images/article.jpg">
+                    </li>
+                    <li class="description">
                         <p><span class="first-letter">L</span>orem ipsum dolor sit amet consectetur adipisicing elit.
                             Excepturi,
                             animi? Tempore aliquid omnis commodi, neque nostrum blanditiis quo
                             praesentium ex minima suscipit molestias voluptatum, amet a impedit
                             veniam quaerat asperiores consequatur nobis eum, eligendi magni
-                            perferendis error provident. Excepturi, temporibus.</p>
-                        <img src="assets/images/articl.png" class="icon" alt="Article Icon">
-                        <h6>Lorem ipsum</h6>
-                        <span>05/04/2022</span>
+                            perferendis error provident. Excepturi, temporibus.
+                        </p>
+                        <ul>
+                            <li><img src="assets/images/articl.png" class="icon" alt="Article Icon"></li>
+                            <li>
+                                <h5>Lorem ipsum</h5>
+                            </li>
+                            <li>
+                                <p>05/04/2022</p>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </section>
+
             <section id="about-us">
                 <div id="sub-header">
                     <h2>A Passion for Justice</h2>
@@ -137,20 +180,18 @@
                         veniam quaerat asperiores consequatur nobis eum, eligendi magni
                         perferendis error provident. Excepturi, temporibus.</p>
                 </div>
-                <aside>
-                    <h4>
-                        </h3L>Lorem ipsum dolor sit </h4>
+                <div id="sidebar">
+                    <h4>What We can</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
                         animi? Tempore aliquid omnis commodi, neque nostrum blanditiis quo
                         praesentium ex minima suscipit molestias voluptatum, amet a impedit
                         veniam quaerat asperiores consequatur nobis eum, eligendi magni
                         perferendis error provident. Excepturi, temporibus.</p>
-                </aside>
-                <section id="empty-one">
-                </section>
+                    </div>
+             
                 <div id="mission">
 
-                    <h5>Mission</h5>
+                    <h4>Mission</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
                         animi? Tempore aliquid omnis commodi, neque nostrum blanditiis quo
                         praesentium ex minima suscipit molestias voluptatum, amet a impedit
@@ -158,9 +199,6 @@
                         perferendis error provident. Excepturi, temporibus.</p>
                     <a href="#">Read more</a>
                 </div>
-                <section id="empty-two">
-                </section>
-
             </section>
 
             <section id="register">
@@ -171,10 +209,11 @@
                     <button class="button">Submit</button>
                 </form>
             </section>
+          
         </main>
         <footer>
             <ul id="grid-ul">
-                <li>
+                <li class="first columne">
                     <ul>
                         <li>
                             <a href="index.html">York </a>
@@ -184,19 +223,21 @@
                         </li>
                         <li>
                             <p>Lorem ipsum is orve dolor sit de ozslf hte is ebst amet consectetur adipisicing elit. Excepturi,
-                                animi? Tempore aliquid omnis commodi. </p>
+                                animi? Tempore aliquid omnis commodi. orve dolor sit de ozslf hte is ebst amet consectetur adipisicing elit. Excepturi,
+                                animi? Tempore aliquid omnis commodi.</p>
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="second columne">
                     <ul>
                         <h4>About</h4>
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Work With us</a></li>
                         <li><a href="#">Blog</a></li>
+                        
                     </ul>
                 </li>
-                <li>
+                <li class="third columne">
                     <ul>
                         <h4>Contact</h4>
                         <li>Phone: 333-340-3333</li>
@@ -204,28 +245,34 @@
                         <li>Adress: Lorem ipsum dolor sit,
                             amet consectetur adipisicing elit.
                         </li>
+                        <li>
+                            <ul class="footer-nav">
+                                <li><a class="facebook" href="#">Facebook</a></li>
+                                <li><a class="linked-in" href="#">Linked-in</a></li>
+                                <li><a class="twitter" href="#">Twitter</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-
             </ul>
-            <nav>
-                <ul>
-                    <li><a class="facebook" href="#"></a></li>
-                    <li><a class="linked-in" href="#"></a></li>
-                    <li><a class="twitter" href="#"></a></li>
-                </ul>
-            </nav>
             <div id="copyright">
-                <p> Copyright &copy; 2017 All Rights Reserved by York</p>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Privacy & policy</a></li>
-                    </ul>
+                <ul>
+                    <li><p> Copyright &copy; 2017 All Rights Reserved by York</p></li>
+                    <li>
+                        <nav>
+                            <ul id="footer-nav">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Privacy & policy</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
             </div>
         </footer>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="menu.js"></script>
 
 </html>
-
-
