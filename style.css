@@ -584,14 +584,14 @@ footer li {
 
 .first ul a {
     display: block;
-    background:url(assets/social/DarkLogo.svg) no-repeat;
-    text-indent: -10000px;
     width: 24px;
     height: 32px;
+    text-indent: -10000px;
+    background: url(assets/social/Darklogo.svg) no-repeat;
 }
 
 .first ul a:hover {
-    background:url(assets/social/darkBlueLogo.svg);
+    background:url(assets/social/darkBlueLogo.svg) no-repeat;
    
 }
 .first ul h4{
