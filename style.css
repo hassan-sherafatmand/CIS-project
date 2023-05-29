@@ -13,6 +13,10 @@ body {
     background-color: #DADADA;
 }
 
+@font-face {
+    font-family: Antonio-Bold;
+    src:url("assets/Fonts/Antonio-Bold.ttf");
+}
 h1,
 h2,
 h3,
@@ -64,11 +68,11 @@ body {
 
 /* Measurements: Baased on 480px
 /*160/480 * 100 = 33.33*/
-/*32/480 * 100 = 6.66*/
+/*32/480 * 100 = 32.66*/
 /*16/480 * 100 = 3.33*/
 /*12/480 * 100 = 2.5*/
 /* 8/480 * 100 = 1.66%*/
-*/
+
 /* */
 
 #grid-container {
@@ -152,7 +156,7 @@ body {
     display: inline-block;
     text-indent: 32px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 300%;
+    font-size: 3em;
     margin-right: 1.66%; /* 8/480 * 100 = 1.66%*/
     color: var(--darkFontColor);
 }
@@ -214,7 +218,8 @@ header nav a {
     text-decoration: none;
     color: #EEE;
     display: block;
-    padding: 3.33%;    /* 16/480 * 100 = 3.33%*/
+    padding: 3.33%;
+    /* 16/480 * 100 = 3.33%*/
     background-color: var(--secondary);
 }
 
@@ -267,7 +272,9 @@ header nav ul.open {
 }
 
 #lead-banner h1 {
-    font-family: 'Arial Narrow Bold', sans-serif;
+    font-family: Antonio-Bold;
+    font-weight: bold;
+    font-size: 300px;
     color: var(--darkFontColor);
     font-size: 2.5em;
     line-height: 1.3em;
@@ -279,7 +286,7 @@ header nav ul.open {
 #lead-banner p {
     line-height: 1.5em;
     color: #585858;
-    padding: 0 4% 1.66% 0;
+    padding: 0 6.33% 1.66% 0;
     /* 8/480 * 100 = 1.66%*/
 }
 
@@ -491,8 +498,7 @@ h2 {
 
  #register{
     display: grid;
-    justify-content: center;
-    padding: 6.33% 0;
+    padding: 6.33% 0 6.33% 6.66% ;
  }
  #register h3 {
     font-family: 'Times New Roman', Times, serif;
@@ -537,7 +543,7 @@ footer #grid-ul {
 #grid-ul li.second{
     grid-column: 2/3;
     grid-row: 2/3;
-    sel
+    
 
 }
 #grid-ul li.third{
