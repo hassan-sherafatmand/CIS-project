@@ -182,11 +182,11 @@ header div.logo {
     width: 24px;
     height: 32px;
     text-indent: -10000px;
-    background: url(assets/social/Darklogo.svg) no-repeat;
+    background: url(assets/social/darkLogo.png) no-repeat;
 }
 
 .logo a:hover {
-    background: url(assets/social/DarkBlueLogo.svg) no-repeat;
+    background: url(assets/social/blueLogo.png) no-repeat;
 }
 
 .logo h3 {
@@ -586,11 +586,11 @@ footer li {
     width: 24px;
     height: 32px;
     text-indent: -10000px;
-    background: url(assets/social/Darklogo.svg) no-repeat;
+    background: url(assets/social/darkLogo.png) no-repeat;
 }
 
 .first ul a:hover {
-    background:url(assets/social/darkBlueLogo.svg) no-repeat;
+    background:url(assets/social/blueLogo.png) no-repeat;
    
 }
 .first ul h4{
