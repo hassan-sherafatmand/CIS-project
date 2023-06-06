@@ -63,6 +63,7 @@ p{
 }
 body {
     font-size: 83%;
+ 
 }
 
 /* Measurements: Baased on 480px
@@ -76,7 +77,7 @@ body {
 
 #grid-container {
     width: 100%;
-    min-width: 480px;
+    max-width: 480px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -676,7 +677,7 @@ li.third ul li {
  @media screen  and (min-width: 768px) {
     #grid-container {
         width: 100%;
-        min-width: 768px;
+        min-width: 600px;
         margin: 0 auto;
     }
     body {
@@ -732,10 +733,6 @@ li.third ul li {
         color: var(--secondary);
     }
     /************************** Banner **************************/
-    /*
-
-
-    */
     #main-banner {
         display: grid;
         grid-template-columns: 1fr;
@@ -815,7 +812,7 @@ li.third ul li {
      #articles ul .title ul li a {
         width: 100%;
         max-width:200PX ;
-        padding: 3.66% 0;
+        padding: 4.5% 0;
     }
     #articles ul .articleImage img{
     width: 80%;
@@ -867,7 +864,7 @@ li.third ul li {
  @media screen  and (min-width: 960px) {
     #grid-container {
         width: 100%;
-        min-width: 960px;
+        max-width: 1200px;
         margin: 0 auto;
     }
     body {
@@ -985,18 +982,15 @@ li.third ul li {
     display: none;
      }
      #articles >ul .title ul li  a {
-        display: block;
         width: 80%;
         max-width: 160px;
-        float: left;
-        color: var(--darkFontColor);
-        text-decoration: none;
-        text-align: center;
-        padding: 2.80% 0;
-        border: #A6A6A6 solid 2px;
-        border-radius: 4px;
+        padding: 3.33% 0;
     }
-    /**** Articles ***********/
+    #articles ul .title ul li:nth-child(2):after{
+       background: url(assets/images/left.png) no-repeat right top;
+       
+    }
+    /**** About Us ***********/
     #about-us p {
         line-height: 24px;
     }
