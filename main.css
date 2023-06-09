@@ -1,3 +1,13 @@
+/* This website is baout a graduated college in the field of Law and Justic (attorney)
+    which they want o start their carrer after their graduation. So, I desing everything myself  such as 
+    Logo, template, theme, buttons and so on. I tried to use all the materials that I learned through quarter. This is my first 
+    web project that I tried to have functionality based on RWD ( Responsive Web Design). Also, I tried to keep minimalist design 
+    as much as possible. Every part of the web design has its own section which i commented through the code. This website is 
+    designed on Figma as a visual design and every object has been design based on 8 point system. 
+*/
+
+
+
 :root {
     --primary: #185EDE;
     --secondary: #013392;
@@ -318,7 +328,7 @@ header nav ul.open {
     display: block;
     width: 32px;
     height: 32px;
-    text-indent: -1000px;
+    text-indent: -10000px;
 }
 
 /****************** Main *************************/
@@ -695,7 +705,7 @@ li.second ul a:hover {
     display: block;
     width: 32px;
     height: 32px;
-    text-indent: -1000px;
+    text-indent: -10000px;
 }
 
 /*******************************/
@@ -742,7 +752,17 @@ li.third ul li {
     font-style: italic;
 }
 
-
+#privacy_policy article{
+    border: none;
+    
+    box-shadow: 1px 2px 4px #A6A6A6;
+    padding: 3.33%;
+    box-sizing: border-box;
+    margin-bottom:3.33%;
+}
+#privacy_policy article h3{
+    margin-bottom:2.5%;
+}
 /****************************** Media Queries *********************************/
 
 /*************************** Tablet *********************/
@@ -1069,7 +1089,7 @@ li.third ul li:last-child {
         grid-column: 5/13;
         align-items: center;
     }
-
+   
 
 
     /************************** Banner **************************/
@@ -1110,7 +1130,7 @@ li.third ul li:last-child {
         width: 24%;
         /*160/480 * 100 = 33.33*/
     }
-
+   
     /************************** Main **************************/
     /**** Practice Areas ***********/
     #practice-areas ul {
