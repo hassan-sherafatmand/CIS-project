@@ -1,0 +1,4 @@
+Sofian Hammou mentioned that when they resize the website, content overlay on eah other. So, I fixed the problem.
+Nathan Mclain mentioned that mobile icone apears when they open the webpage automaticly. So, I fixed the problem. Also, fixe the text-indent of the h4 in banner section.
+I added favicon for the webpage.
+

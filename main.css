@@ -15,8 +15,9 @@ body {
 
 @font-face {
     font-family: Antonio-Bold;
-    src:url("assets/Fonts/Antonio-Bold.ttf");
+    src: url("assets/Fonts/Antonio-Bold.ttf");
 }
+
 h1,
 h2,
 h3,
@@ -58,12 +59,13 @@ h5 {
     font-size: 1em;
 }
 
-p{
-    font-size:100% ;
+p {
+    font-size: 100%;
 }
+
 body {
     font-size: 83%;
- 
+
 }
 
 /* Measurements: Baased on 480px
@@ -86,8 +88,10 @@ body {
 /*****************  Classes **********************/
 .button {
     display: block;
-    width: 33.33%; /*160/480 * 100 = 33.33*/
-    padding: 3.33% 0;/*16/480 * 100 = 3.33*/
+    width: 33.33%;
+    /*160/480 * 100 = 33.33*/
+    padding: 3.33% 0;
+    /*16/480 * 100 = 3.33*/
     text-align: center;
     font-size: 1.2em;
     color: var(--whiteFontColor);
@@ -100,7 +104,9 @@ body {
 .button:hover {
     background-color: var(--secondary);
 }
-.social-nav, .footer-nav{
+
+.social-nav,
+.footer-nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -134,12 +140,15 @@ body {
 
 .read-more {
     display: block;
-    width: 26.6%; /*128/480 * 100 = 33.33*/
-    padding: 2% 0; /*12/480 * 100 = 2.5*/
+    width: 26.6%;
+    /*128/480 * 100 = 33.33*/
+    padding: 2% 0;
+    /*12/480 * 100 = 2.5*/
     text-align: center;
     color: var(--darkFontColor);
     border-radius: 4px;
-    margin: 2% 0;/*12/480 * 100 = 2.5*/
+    margin: 2% 0;
+    /*12/480 * 100 = 2.5*/
     text-decoration: none;
     border: #A6A6A6 solid 1px;
     box-shadow: 1px 2px 4px #A6A6A6;
@@ -150,14 +159,17 @@ body {
     background-color: var(--secondary);
     border: var(--secondary) solid 2px;
 }
-.first-letter{
+
+.first-letter {
     display: inline-block;
     text-indent: 32px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 3em;
-    margin-right: 1.66%; /* 8/480 * 100 = 1.66%*/
+    margin-right: 1.66%;
+    /* 8/480 * 100 = 1.66%*/
     color: var(--darkFontColor);
 }
+
 /******************** Header  *********************/
 header {
     display: grid;
@@ -165,7 +177,8 @@ header {
     grid-template-rows: minmax(64px, auto);
     align-items: center;
     background: var(--major-Background);
-    padding: 0 3.33% 0 0;/* 16/480 * 100 = 3.33%*/
+    padding: 0 3.33% 0 0;
+    /* 16/480 * 100 = 3.33%*/
 }
 
 header div.logo {
@@ -201,7 +214,7 @@ header div.logo {
 }
 
 header nav h3 {
-    display: none;
+    text-indent: -10000px;
 }
 
 header nav ul {
@@ -216,7 +229,8 @@ header nav a {
     text-decoration: none;
     color: #EEE;
     display: block;
-    padding: 3.33%; /* 16/480 * 100 = 3.33%*/
+    padding: 3.33%;
+    /* 16/480 * 100 = 3.33%*/
     background-color: var(--secondary);
 }
 
@@ -243,7 +257,7 @@ header nav ul.open {
 }
 
 #banner-background {
-    max-height: 96%;
+    max-height: 90%;
     /* 768/800 * 100 = 96%*/
     overflow: hidden;
 }
@@ -314,11 +328,13 @@ main {
 
 main section {
     margin: 3.66% 0;
-    padding: 0 3.33%;/* 16/480 * 100 = 3.33%*/
+    padding: 0 3.33%;
+    /* 16/480 * 100 = 3.33%*/
 }
 
 section h2 {
-    padding: 3.33% 0;/* 16/480 * 100 = 3.33%*/
+    padding: 3.33% 0;
+    /* 16/480 * 100 = 3.33%*/
 }
 
 section h4 {
@@ -331,11 +347,13 @@ section p {
     line-height: 1.5em;
     color: #585858;
 }
+
 #practice-areas h4,
 h2 {
     font-weight: bold;
     color: var(--darkFontColor);
 }
+
 #practice-areas img {
     width: 100%;
 }
@@ -344,31 +362,43 @@ h2 {
     margin-top: 5%;
     /* 24/480 * 100 = 5%*/
 }
+
 #practice-areas ul li {
     margin-bottom: 5%;
     padding: 3.33%;
     border: #A6A6A6 solid 1px;
     box-shadow: 1px 2px 4px #A6A6A6;
 }
+
+#layout-button {
+    display: none;
+}
+
+#stack-grid {
+    margin: 6.33% 0;
+}
+
 /******************** Articles  *********************/
-#articles > ul {
+#articles>ul {
     margin-top: 5%;
     /* 24/480 * 100 = 5%*/
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-   
+
 }
 
-#articles ul .title{
+#articles ul .title {
     grid-column: 1/3;
 }
-#articles ul .articleImage{
-   grid-column: 3/5;
-   max-height:56%;
-   overflow: hidden;
-   margin-left: 20px;
+
+#articles ul .articleImage {
+    grid-column: 3/5;
+    max-height: 56%;
+    overflow: hidden;
+    margin-left: 20px;
 
 }
+
 #articles ul .description {
     margin-top: 6.33%;
     margin-bottom: 6.66%;
@@ -379,27 +409,32 @@ h2 {
     display: grid;
     grid-template-columns: 1fr;
 }
-#articles ul .title ul h4{
+
+#articles ul .title ul h4 {
     padding: 0;
 }
-#articles ul .title ul li:nth-child(1){
+
+#articles ul .title ul li:nth-child(1) {
     margin-bottom: 3.33%;
 }
-#articles ul .title ul li{
+
+#articles ul .title ul li {
     clear: left;
 }
-#articles ul .title ul li:nth-child(2):after{
+
+#articles ul .title ul li:nth-child(2):after {
     display: block;
     content: " ";
     width: 48px;
     height: 45px;
     float: left;
-    margin-left:5px ;
+    margin-left: 5px;
     border: #013392 solid 1px;
     border-radius: 4px;
-   background: url(assets/images/down.png) no-repeat right top;
-   
+    background: url(assets/images/down.png) no-repeat right top;
+
 }
+
 #articles ul .title ul li a {
     display: block;
     width: 80%;
@@ -418,9 +453,11 @@ h2 {
     background-color: var(--secondary);
     border: var(--secondary) solid 2px;
 }
-#articles ul .articleImage img{
+
+#articles ul .articleImage img {
     width: 100%;
 }
+
 #articles ul .description ul {
     display: flex;
     margin-top: 3.66%;
@@ -433,10 +470,12 @@ h2 {
     padding-bottom: 1.66%;
     flex-grow: 1;
 }
-#articles ul .description > p{
+
+#articles ul .description>p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.1em;
 }
+
 #articles ul .description ul li img {
     width: 32px;
     height: 32px;
@@ -446,64 +485,78 @@ h2 {
 
 /******************** About Us  *********************/
 
-#about-us{
+#about-us {
     display: grid;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
-#about-us div{
+
+#about-us div {
     margin-top: 3.33%;
- }
-#sub-header{
+}
+
+#sub-header {
     background-color: var(--secondary);
     padding: 3.33%
 }
-#sub-header h2{
-    font-size: 2em;
- }
 
-#sub-header h2, #sub-header p, #mission h4, #mission p{
-   color:#bdbdbd;
+#sub-header h2 {
+    font-size: 2em;
+}
+
+#sub-header h2,
+#sub-header p,
+#mission h4,
+#mission p {
+    color: #bdbdbd;
 
 }
+
 #sidebar {
     padding: 3.33%
 }
 
 #mission {
-    padding: 6.33% 3.33% 0  8.33%;
+    padding: 6.33% 3.33% 0 8.33%;
     border-left: #0046CB solid 32px;
-    background: url( assets/images/small-pillar.jpg) no-repeat top left;
- }
- #mission a {
+    background: url(assets/images/small-pillar.jpg) no-repeat top left;
+}
+
+#mission a {
     display: block;
-    width: 33.33%; /*128/480 * 100 = 33.33*/
-    padding: 3.33% ; /*12/480 * 100 = 2.5*/
+    width: 33.33%;
+    /*128/480 * 100 = 33.33*/
+    padding: 3.33%;
+    /*12/480 * 100 = 2.5*/
     text-align: center;
     color: var(--whiteFontColor);
     border-radius: 4px;
     margin: 3.33% 0;
     text-decoration: none;
     border: #A6A6A6 solid 1px;
- }
- #mission a:hover{
-    background:var(--whiteFontColor);
+}
+
+#mission a:hover {
+    background: var(--whiteFontColor);
     color: #013392;
- }
+}
 
- /******************** Register  *********************/
+/******************** Register  *********************/
 
- #register{
+#register {
     display: grid;
-    padding: 6.33% 0 6.33% 6.66% ;
- }
- #register h3 {
+    padding: 6.33% 0 6.33% 6.66%;
+}
+
+#register h3 {
     font-family: 'Times New Roman', Times, serif;
- }
- #register h1 {
+}
+
+#register h1 {
     font-size: 2.5em;
     margin: 3.33% 0;
 }
+
 #register form input {
     background: none;
     border: 1px solid var(--darkFontColor);
@@ -516,34 +569,41 @@ h2 {
     width: 66.66%;
     margin: 3.33% 0;
 }
-#register form button{
+
+#register form button {
     border: none;
 }
- /******************** Footer  *********************/
- footer {
+
+/******************** Footer  *********************/
+footer {
     background: #121212;
-    
+
 }
 
 footer #grid-ul {
     background: #d1d1d1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 3.33%;/* 16/480 * 100 = 3.33%*/
+    padding: 3.33%;
+    /* 16/480 * 100 = 3.33%*/
 }
-#grid-ul .columne{
-    padding:3.33%;
+
+#grid-ul .columne {
+    padding: 3.33%;
 }
-#grid-ul li.first{
+
+#grid-ul li.first {
     grid-column: 1/3;
 }
-#grid-ul li.second{
+
+#grid-ul li.second {
     grid-column: 2/3;
     grid-row: 2/3;
-    
+
 
 }
-#grid-ul li.third{
+
+#grid-ul li.third {
     grid-column: 1/2;
     grid-row: 2/3;
 }
@@ -554,7 +614,7 @@ footer a,
 footer h4,
 footer p,
 footer li {
-    color:var(--darkFontColor);
+    color: var(--darkFontColor);
 
 }
 
@@ -563,7 +623,7 @@ footer li {
 
 .first ul {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); 
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .first ul li:nth-child(1) {
@@ -589,46 +649,55 @@ footer li {
 
 .first ul a:hover {
     background: url(assets/social/blueLogo.png) no-repeat;
-   
+
 }
-.first ul h4{
+
+.first ul h4 {
     margin-left: -20%;
 }
+
 .first ul p {
-  text-align: justify;
-  line-height: 1.5em;
-  padding: 3.33%  0;
+    text-align: justify;
+    line-height: 1.5em;
+    padding: 3.33% 0;
 
 }
 
 /*******************************/
 /* second columne of the footer*/
-li.second > ul{
+li.second>ul {
     padding-left: 3.33%;
 }
- li.second ul li {
+
+li.second ul li {
     margin-top: 6.33%;
 }
- li.second ul a {
-    text-decoration: underline; 
+
+li.second ul a {
+    text-decoration: underline;
 }
+
 li.second ul a:hover {
     font-style: italic;
 }
-.footer-nav  {
-    width: 70%;/*160/480 * 100 = 33.33*/
+
+.footer-nav {
+    width: 70%;
+    /*160/480 * 100 = 33.33*/
     padding-top: 3.33%;
 }
 
 .footer-nav li {
     justify-self: start;
 }
+
 .footer-nav li a {
     display: block;
     width: 32px;
     height: 32px;
     text-indent: -1000px;
 }
+
 /*******************************/
 /* third columne of the footer*/
 li.third ul li {
@@ -637,21 +706,23 @@ li.third ul li {
 
 /*******************************/
 /* Copy Right*/
-#copyright > ul {
+#copyright>ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
 }
-#copyright > ul li:nth-child(1){
+
+#copyright>ul li:nth-child(1) {
     grid-column: 1/3;
-    padding: 3.33%  3.33%;
-}
-#copyright > ul li:nth-child(2){
-    grid-column: 3/4;
-    padding: 3.33%  3.33%;
+    padding: 3.33% 3.33%;
 }
 
-#footer-nav{
+#copyright>ul li:nth-child(2) {
+    grid-column: 3/4;
+    padding: 3.33% 3.33%;
+}
+
+#footer-nav {
     display: flex;
     justify-content: end;
 }
@@ -661,37 +732,43 @@ li.third ul li {
     font-size: 90%;
 }
 
-#copyright a{
+#copyright a {
     font-size: 80%;
     color: var(--background);
- }
-#copyright a:hover{
+}
+
+#copyright a:hover {
     color: var(--whiteFontColor);
     font-style: italic;
- }
+}
 
 
- /* Media Queries */
+/****************************** Media Queries *********************************/
 
- /*Tablet*/
- @media screen  and (min-width: 768px) {
+/*************************** Tablet *********************/
+@media screen and (min-width: 768px) {
     #grid-container {
         width: 100%;
         min-width: 600px;
         margin: 0 auto;
     }
+
     body {
         font-size: 100%;
     }
+
     .logo {
         padding: 3.33%;
     }
+
     .logo a {
         justify-self: start;
     }
-    .logo h3{
+
+    .logo h3 {
         margin-left: -8%;
     }
+
     .logo h3 {
         grid-column: 2/8;
     }
@@ -699,219 +776,304 @@ li.third ul li {
     .current {
         color: var(--secondary);
     }
+
     header nav {
-        margin-bottom:3.33%;
+        margin-bottom: 3.33%;
     }
-    #Mobile_menu{
+
+    #Mobile_menu {
         display: none;
     }
+
     header nav ul {
+        margin-top: -5%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-       
         height: auto;
     }
+
     header nav ul li {
         width: 100%;
         background-color: none;
         justify-content: center;
 
     }
+
     header nav ul li {
         border-bottom: none;
     }
+
     header nav a {
         font-weight: bold;
         color: var(--darkFontColor);
         opacity: 72%;
-        background:none;
+        background: none;
         padding: 5%;
         text-align: center;
     }
+
     header nav a:hover {
-        background:none;
+        background: none;
         color: var(--secondary);
     }
+
     /************************** Banner **************************/
-    #main-banner {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: minmax(80px, auto);
-        position: relative;
-        /*padding: 0 3.33% 0 ;     16/480 * 100 = 3.33%*/
-    }
-    
+
     #banner-background {
-        height: 100%; /* 768/800 * 100 = 96%*/
-        overflow:none;
+        max-height: 100%;
+        /* 768/800 * 100 = 96%*/
+        overflow: hidden;
     }
-    
+
     #banner-background img {
         width: 100%;
         opacity: 48%;
     }
-    
+
     #banner-content {
         position: absolute;
-        top: 18%; /* 64/480 * 100 = 13.33%*/
-        left: 8%;/* 16/480 * 100 = 3.33%*/
+        top: 10%;
+        /* 64/480 * 100 = 13.33%*/
+        left: 8%;
+        /* 16/480 * 100 = 3.33%*/
     }
-    
+
     #lead-banner h3 {
         font-family: 'Times New Roman', Times, serif;
         color: var(--primary);
         font-size: 2em;
         /* 8/480 * 100 = 1.66%*/
-    
+
     }
+
     #lead-banner h1 {
-        font-size: 3.25em;
+        font-size: 3em;
     }
-    
+
     #lead-banner p {
         line-height: 2em;
         color: #585858;
         padding: 2.5% 10.33% 1.66% 0;
         /* 8/480 * 100 = 1.66%*/
     }
-    
+
     #banner-content h4 {
         text-indent: -10000px;
     }
-    
+
     #social {
+        margin-top: -2%;
         width: 33.33%;
         /*160/480 * 100 = 33.33*/
     }
-    
+
     /************************** Main **************************/
-     /**** Practice Areas ***********/
-     #practice-areas ul {
+    /**** Practice Areas ***********/
+    #practice-areas ul {
         margin: 3.33% 0;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 1.33%;
         row-gap: 1%;
-     }
-     #practice-areas ul li {
+    }
+
+    #practice-areas ul li {
         margin: 0;
         padding: 3.33%;
-     }
-     
-     #practice-areas ul p, #practice-areas ul h4 {
+    }
+
+    #practice-areas ul p,
+    #practice-areas ul h4 {
         padding: 1.33% 3.33%;
-     }
-     #practice-areas ul a{
+        text-align: left;
+    }
+
+    #practice-areas ul a {
         padding: 3.33%;
         width: 32.6%;
-        margin-left:3.33% ;
-     }
-
-     /************************** Main **************************/
-     /**** Articles ***********/
-     #articles ul .title ul li a {
-        width: 100%;
-        max-width:200PX ;
-        padding: 4.5% 0;
+        margin-left: 3.33%;
     }
-    #articles ul .articleImage img{
-    width: 80%;
+
+    /******* Articles */
+    #layout-button {
+        margin-top: 8.33%;
+        display: block;
+    }
+
+    #layout-button ul {
+        list-style-type: none;
+        width: 32%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+    }
+
+    #layout-button li {
+        flex: 0 1 40%;
+        background-color: var(--background);
+      
+    }
+    #layout-button li:hover {
+        background-color: var(--secondary);
+    }
+
+    #layout-button ul a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    #stack-grid {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    article {
+        flex: 0 1 49%;
+        margin: 0.70% 0;
+        border: #A6A6A6 solid 1px;
+        box-shadow: 1px 2px 4px #A6A6A6;
+        padding: 3.33%;
+        box-sizing: border-box;
+    }
+
+    #stack-grid p {
+        text-align: left;
+    }
+
+    article.stack {
+        flex: 0 1 100%;
     }
 
     /************************** Main **************************/
-     /**** About Us ***********/
-  
+    /**** Articles ***********/
+    #articles ul .title ul li a {
+        width: 100%;
+        max-width: 200PX;
+        padding: 4.5% 0;
+    }
+
+    #articles ul .articleImage img {
+        width: 80%;
+    }
+
+    /************************** Main **************************/
+    /**** About Us ***********/
+
     #mission {
-        padding: 6.33% 6.33% 0  13.33%;
+        padding: 6.33% 6.33% 0 13.33%;
         border-left: #0046CB solid 32px;
-        background: url( assets/images/mid-pillar.jpg) no-repeat top left;
-     }
-     #mission p{
+        background: url(assets/images/mid-pillar.jpg) no-repeat top left;
+    }
+
+    #mission p {
         margin-top: 6.33%;
-     }
-    
-     #mission a {
+    }
+
+    #mission a {
         display: block;
-        width: 24%; /*128/480 * 100 = 33.33*/
-        padding: 2.5% ; /*12/480 * 100 = 2.5*/
+        width: 24%;
+        /*128/480 * 100 = 33.33*/
+        padding: 2.5%;
+        /*12/480 * 100 = 2.5*/
         text-align: center;
         color: var(--whiteFontColor);
         border-radius: 4px;
         margin: 3.33% 0;
         text-decoration: none;
         border: #A6A6A6 solid 1px;
-     }
-     #mission a:hover{
-        background:var(--whiteFontColor);
+    }
+
+    #mission a:hover {
+        background: var(--whiteFontColor);
         color: #013392;
-     }
-
- }
-  /************************** Main **************************/
-     /**** Footer ***********/
-    .second {
-        margin-left: 32%;
-    }
-    li.third ul li:last-child{
-     width: 80%;
     }
 
+}
+
+/************************** Main **************************/
+/**** Footer ***********/
+.second {
+    margin-left: 32%;
+}
+
+li.third ul li:last-child {
+    width: 80%;
+}
 
 
 
-/****************************************************/
-  /*Desktop*/
- @media screen  and (min-width: 960px) {
+
+/**********************************************************************/
+/************************* Desktop ************************/
+@media screen and (min-width: 960px) {
     #grid-container {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
     }
+
     body {
         font-size: 100%;
     }
+
     .logo {
         padding: 3.33%;
     }
+
     .logo a {
         justify-self: start;
     }
-    .logo h3{
+
+    .logo h3 {
         margin-left: -8%;
     }
+
     .logo h3 {
         grid-column: 2/8;
     }
-   
+
     .current {
         color: var(--secondary);
     }
-    #Mobile_menu{
+
+    #Mobile_menu {
         display: none;
     }
+
     /************************** Header **************************/
     header {
-       
-        grid-template-columns:repeat(12, 1fr);
+
+        grid-template-columns: repeat(12, 1fr);
         grid-template-rows: minmax(96px, auto);
         align-items: center;
         background: var(--major-Background);
-        padding: 0 3.33% 0 3.33%;/* 16/480 * 100 = 3.33%*/
+        padding: 0 3.33% 0 3.33%;
+        /* 16/480 * 100 = 3.33%*/
     }
+
     header div.logo {
         grid-column: 1/5;
         grid-template-columns: repeat(4, 1fr);
     }
-    header nav{
-        margin-top: 3.33%;
+
+    header nav {
+        margin: 0;
         grid-column: 5/13;
         align-items: center;
     }
 
 
 
-/************************** Banner **************************/
-   
+    /************************** Banner **************************/
+
     #main-banner {
         display: grid;
         grid-template-columns: 1fr;
@@ -919,108 +1081,182 @@ li.third ul li {
         position: relative;
         /*padding: 0 3.33% 0 ;     16/480 * 100 = 3.33%*/
     }
-    
+
     #banner-background {
-        height: 700px; /* 768/800 * 100 = 96%*/
-        overflow:hidden;
+        height: 700px;
+        /* 768/800 * 100 = 96%*/
+        overflow: hidden;
     }
-    
+
     #banner-background img {
         width: 100%;
         opacity: 48%;
     }
-    
+
     #banner-content {
         position: absolute;
-        top: 14%; /* 64/480 * 100 = 13.33%*/
-        left: 8%;/* 16/480 * 100 = 3.33%*/
+        top: 14%;
+        /* 64/480 * 100 = 13.33%*/
+        left: 8%;
+        /* 16/480 * 100 = 3.33%*/
     }
-    
+
     #lead-banner h1 {
         font-size: 4em;
     }
-    
+
     #social {
+        margin: 0;
         width: 24%;
         /*160/480 * 100 = 33.33*/
     }
 
     /************************** Main **************************/
-     /**** Practice Areas ***********/
-     #practice-areas ul {
+    /**** Practice Areas ***********/
+    #practice-areas ul {
         margin: 3.33% 0;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 0.33%;
-     }
-     #practice-areas ul li {
+    }
+
+    #practice-areas ul li {
         margin: 0;
         padding: 3.33%;
-     }
-     
-     #practice-areas ul p, #practice-areas ul h4 {
+    }
+
+    #practice-areas ul p,
+    #practice-areas ul h4 {
         padding: 1.33% 3.33%;
         text-align: left;
-     }
-     #practice-areas ul a{
+    }
+
+    #practice-areas ul a {
         padding: 3.33%;
         width: 40.6%;
-        margin-left:3.33% ;
-     }
-      
-     /**** Articles ***********/
-    
-     #articles > ul {
+        margin-left: 3.33%;
+    }
+
+    /******* Articles */
+    #layout-button {
+        margin-top: 4.33%;
+        display: block;
+    }
+
+    #layout-button ul {
+        list-style-type: none;
+        width: 24%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+    }
+
+    #layout-button li {
+        flex: 0 1 40%;
+        background-color: var(--background);
+     
+    }
+    #layout-button li:hover {
+        background-color: var(--secondary);
+    }
+
+    #layout-button ul a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        padding: 8px 0;
+    }
+
+    #stack-grid {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    article {
+        flex: 0 1 32%;
+        margin: 0.70% 0;
+        border: #A6A6A6 solid 1px;
+        box-shadow: 1px 2px 4px #A6A6A6;
+        padding: 3.33%;
+        box-sizing: border-box;
+    }
+
+    #stack-grid p {
+        text-align: left;
+    }
+
+    article.stack {
+        flex: 0 1 100%;
+    }
+
+    /******************* Articles  section ***********/
+
+    #articles>ul {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
     }
- 
-    #articles > ul .description{
-       grid-column:3/7;
-     }
-     #articles > ul .articleImage{
-    display: none;
-     }
-     #articles >ul .title ul li  a {
+
+    #articles>ul .description {
+        grid-column: 3/7;
+    }
+
+    #articles>ul .articleImage {
+        display: none;
+    }
+
+    #articles>ul .title ul li a {
         width: 80%;
         max-width: 160px;
         padding: 3.33% 0;
     }
-    #articles ul .title ul li:nth-child(2):after{
-       background: url(assets/images/left.png) no-repeat right top;
-       
+
+    #articles ul .title ul li:nth-child(2):after {
+        background: url(assets/images/left.png) no-repeat right top;
+
     }
+
     /**** About Us ***********/
     #about-us p {
         line-height: 24px;
     }
-    #about-us div{
+
+    #about-us div {
         margin: 0;
     }
-    #about-us{
+
+    #about-us {
         background-color: var(--secondary);
         display: grid;
-        grid-template-columns: repeat(12,1fr);
+        grid-template-columns: repeat(12, 1fr);
 
     }
 
-    #sub-header{
+    #sub-header {
         grid-column: 2/9;
-        padding-right:  10%;
+        padding-right: 10%;
     }
+
     #sidebar {
         background-color: var(--minor_background);
         grid-column: 9/13;
         padding: 12.33% 6.33%;
         margin-top: -30px;
-       
+
     }
+
     #mission {
         grid-column: 5/13;
-        padding: 6.33% 3.33% 0  8.33%;
+        padding: 6.33% 3.33% 0 8.33%;
         border-left: #0046CB solid 32px;
-        background: url( assets/images/big-pillar.jpg) no-repeat top left;
+        background: url(assets/images/big-pillar.jpg) no-repeat top left;
     }
+
     #empty {
         background-color: var(--minor_background);
         grid-column: 9/13;
@@ -1031,18 +1267,22 @@ li.third ul li {
         padding-left: 14%;
         padding-right: 8%;
     }
+
     /**** Regiseter ***********/
     #register {
         justify-content: center;
     }
+
     #register h1 {
         font-size: 4em;
         margin: 3.33% 0;
     }
+
     #register h3 {
         font-size: 2.5em;
-        
+
     }
+
     #register form input {
         background: none;
         border: 1px solid var(--darkFontColor);
@@ -1053,11 +1293,12 @@ li.third ul li {
         padding: 3.33%;
         display: block;
         width: 60.66%;
-        
+
     }
+
     #register .button {
         display: block;
-        width: 32.33%; 
+        width: 32.33%;
         padding: 3.33% 0;
         text-align: center;
         font-size: 1.2em;
@@ -1067,31 +1308,35 @@ li.third ul li {
         text-decoration: none;
         background-color: var(--darkFontColor);
     }
-     /************************** Footer **************************/
-    
-    
+
+    /************************** Footer **************************/
+
+
     footer #grid-ul {
 
         grid-template-columns: repeat(3, 1fr);
-        padding: 3.33%;/* 16/480 * 100 = 3.33%*/
+        padding: 3.33%;
+        /* 16/480 * 100 = 3.33%*/
     }
-    #grid-ul .columne{
-        padding:3.33%;
+
+    #grid-ul .columne {
+        padding: 3.33%;
     }
-    #grid-ul li.first{
+
+    #grid-ul li.first {
         grid-column: 1/2;
     }
-    #grid-ul li.second{
+
+    #grid-ul li.second {
         grid-column: 3/4;
         grid-row: 1/2;
     }
-    #grid-ul li.third{
+
+    #grid-ul li.third {
         grid-column: 2/3;
         grid-row: 1/2;
         padding-left: 20%;
-   
+
     }
 
- }
-
- 
+}
