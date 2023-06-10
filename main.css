@@ -1317,16 +1317,9 @@ li.third ul li:last-child {
     }
 
     #register .button {
-        display: block;
         width: 32.33%;
-        padding: 3.33% 0;
-        text-align: center;
-        font-size: 1.2em;
-        color: var(--whiteFontColor);
         border-radius: 8px;
         margin-top: 1.66%;
-        text-decoration: none;
-        background-color: var(--darkFontColor);
     }
 
     /************************** Footer **************************/
