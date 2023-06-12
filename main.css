@@ -169,12 +169,14 @@ body {
     border: var(--secondary) solid 2px;
 }
 
+
 .first-letter {
+    margin-top: -1.33%;
     display: inline-block;
     text-indent: 32px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 3em;
-    margin-right: 1.66%;
+    margin-right: 6.33%;
     /* 8/480 * 100 = 1.66%*/
     color: var(--darkFontColor);
 }
@@ -940,7 +942,10 @@ span{
         width: 32.6%;
         margin-left: 3.33%;
     }
-
+    .first-letter {
+        margin-right: 6.33%;
+    }
+    
     /******* Articles */
     #layout-button {
         margin-top: 8.33%;
@@ -1264,6 +1269,9 @@ li.third ul li:last-child {
     #articles ul .title ul li:nth-child(2):after {
         background: url(assets/images/left.png) no-repeat right top;
 
+    }
+    .first-letter {
+        margin-right: 2.5%;
     }
 
     /**** About Us ***********/
