@@ -23,6 +23,45 @@ article h2 {
 article p {
     line-height: 1.4em;
 }
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+}
+ul li{
+    clear: left;
+}
+  
+span{
+    display: block;
+    width: 16px;
+    height: 24px;
+    float: left; 
+    margin-right: 5px;
+
+}
+
+.phone {
+    background: url(assets/social/phone.png) no-repeat;
+    opacity: 64%;
+}
+
+
+.email {
+    background: url(assets/social/email.png) no-repeat;
+    opacity: 64%;
+}
+
+
+.address {
+    background: url(assets/social/location.png) no-repeat;
+    opacity: 64%;
+}
+
+
+
 @media screen and (min-width: 768px){
     #layout-button{
         display: block;

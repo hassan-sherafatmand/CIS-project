@@ -84,7 +84,6 @@ body {
 /*16/480 * 100 = 3.33*/
 /*12/480 * 100 = 2.5*/
 /* 8/480 * 100 = 1.66%*/
-
 /* */
 
 #grid-container {
@@ -178,6 +177,25 @@ body {
     margin-right: 1.66%;
     /* 8/480 * 100 = 1.66%*/
     color: var(--darkFontColor);
+}
+
+
+
+.phone {
+    background: url(assets/social/phone.png) no-repeat;
+    opacity: 64%;
+}
+
+
+.email {
+    background: url(assets/social/email.png) no-repeat;
+    opacity: 64%;
+}
+
+
+.address {
+    background: url(assets/social/location.png) no-repeat;
+    opacity: 64%;
 }
 
 /******************** Header  *********************/
@@ -713,6 +731,14 @@ li.second ul a:hover {
 li.third ul li {
     margin-top: 6.33%;
 }
+span{
+    display: block;
+    width: 8%;
+    height: 24px;
+    float: left; 
+    margin-right: 2.5%;
+
+}
 
 /*******************************/
 /* Copy Right*/
@@ -804,6 +830,7 @@ li.third ul li {
     #Mobile_menu {
         display: none;
     }
+    /******************* Heade Starts here *************************/
 
     header nav ul {
         margin-top: -5%;
@@ -926,8 +953,6 @@ li.third ul li {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
-
     }
 
     #layout-button li {

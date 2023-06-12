@@ -15,7 +15,9 @@
 </head>
 
 <body>
+    <!-- This div structures the Gird layout of the web page. -->
     <div id="grid-container">
+        <!-- Heder starts here-->
         <header>
             <div class="logo">
                 <a href="index.html">York Law Office</a>
@@ -32,7 +34,10 @@
                 </ul>
             </nav>
         </header>
+        <!-- Heder ends here-->
+        <!-- Main starts here-->
         <main>
+             <!-- This section demonstrates  leagal areas that this compnay works on it -->
             <section id="practice-areas">
                 <h2>Practice Areas</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
@@ -67,13 +72,15 @@
                             animi? Tempore aliquid omnis commodi,</p>
                     </li>
                 </ul>
+                 <!-- This section demonstrates  how the articles to be demonstrated whether in a Grid or List style -->
                 <div id="layout-button">
                     <h2>New Articles of the Season</h2>
                     <p>If you like to see the articles to be viewed in Grid or Stack style, you can choose by
                         clicking on one of these buttons.
                     </p>
                     <ul>
-                        <li><a href="leagal-practices.html#layout-button" class="stack">Stack</a></li>
+                         <!-- created these two buttons for expressing the articles in a Grid or List style -->
+                        <li><a href="leagal-practices.html#layout-button" class="stack">List</a></li>
                         <li><a href="leagal-practices.html#layout-button" class="grid">Grid</a></li>
                     </ul>
                 </div>
@@ -160,11 +167,13 @@
                 </section>
 
             </section>
-
-            
         </main>
+        <!-- Main ends here-->
+        <!-- Footer starts here-->
         <footer>
+             <!-- This ul structures the Gird layout of the footer  -->
             <ul id="grid-ul">
+                <!-- First column provides a summarized information about compnay  -->
                 <li class="first columne">
                     <ul>
                         <li>
@@ -180,20 +189,22 @@
                         </li>
                     </ul>
                 </li>
+                <!-- Second column provides the compnay's contact information  -->
                 <li class="second columne">
                     <ul>
                         <h4>Links</h4>
                         <li><a href="about-us.html">About us</a></li>
-                        <li><a href="contact.html">Contcact</a></li>
+                        <li><a href="index.html">Home Page</a></li>
                         
                     </ul>
                 </li>
+                <!-- Third column provides some necessaries links  -->
                 <li class="third columne">
                     <ul>
                         <h4>Contact</h4>
-                        <li>Phone: 333-340-3333</li>
-                        <li>Email: York@info.com</li>
-                        <li>Adress: Lorem ipsum dolor sit,
+                        <li><span class="phone"> </span>333-340-3333</li>
+                        <li><span class="email"> </span> York@info.com</li>
+                        <li><span class="address"> </span> Lorem ipsum dolor sit,
                             amet consectetur adipisicing elit.
                         </li>
                         <li>
@@ -206,6 +217,7 @@
                     </ul>
                 </li>
             </ul>
+              <!-- Here a section about copyright -->
             <div id="copyright">
                 <ul>
                     <li><p> Copyright &copy; 2017 All Rights Reserved by York Office</p></li>
@@ -221,6 +233,8 @@
             </div>
         </footer>
     </div>
+      <!-- this JS code is about giving the <article> a class of Stack and also removing the class of stack -->
+      <!-- I used to provides a features for user to style the articles eather Grid or List style -->
     <script>
         $("a.stack").on("click", function(){
             $("article").addClass("stack");
